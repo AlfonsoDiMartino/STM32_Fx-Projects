@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Bus Seriali: I2C_Slave_C</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Bus Seriali
+   </div>
+   <div id="projectbrief">Progetti Bus Seriali : I2C, SPI, UART con toolchain STM32</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li class="current"><a href="modules.html"><span>Moduli</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li><a href="files.html"><span>File</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group___i2_c___slave___c.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#func-members">Funzioni</a> &#124;
+<a href="#var-members">Variabili</a>  </div>
+  <div class="headertitle">
+<div class="title">I2C_Slave_C<div class="ingroups"><a class="el" href="group__bus_seriali.html">BusSeriali</a> &raquo; <a class="el" href="group___i2_c.html">I2C</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementazione di un dispositivo Slave che effettua la somma dei due valori ricevuti dai 2 dispositivi Master.  
+<a href="#details">Continua...</a></p>
+<div class="dynheader">
+Diagramma di collaborazione per I2C_Slave_C:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group___i2_c___slave___c.png" border="0" alt="" usemap="#group______i2__c______slave______c"/>
+<map name="group______i2__c______slave______c" id="group______i2__c______slave______c">
+<area shape="rect" id="node1" href="group___i2_c.html" title="I2C" alt="" coords="5,5,48,32"/>
+</map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr class="memitem:ga1434b4f003e5e655c3db167d71842a93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___slave___c.html#ga1434b4f003e5e655c3db167d71842a93">I2C_ADDRESS_C</a>&#160;&#160;&#160;0x0C &lt;&lt;1</td></tr>
+<tr class="memdesc:ga1434b4f003e5e655c3db167d71842a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indirizzo del dispositivo Slave C.  <a href="#ga1434b4f003e5e655c3db167d71842a93">Continua...</a><br /></td></tr>
+<tr class="separator:ga1434b4f003e5e655c3db167d71842a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:ga4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___slave___c.html#ga4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
+<tr class="memdesc:ga4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione di inizializzazione.  <a href="#ga4fc01d736fe50cf5b977f755b675f11d">Continua...</a><br /></td></tr>
+<tr class="separator:ga4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___slave___c.html#gafe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
+<tr class="memdesc:gafe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione che implementa la logica del programma.  <a href="#gafe461d27b9c48d5921c00d521181f12f">Continua...</a><br /></td></tr>
+<tr class="separator:gafe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___slave___c.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="memdesc:ga840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main Program.  <a href="#ga840291bc02cba5474a4cb46a9b9566fe">Continua...</a><br /></td></tr>
+<tr class="separator:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variabili</h2></td></tr>
+<tr class="memitem:gac969e9fc650b7e92a8378abad5778c0e"><td class="memItemLeft" align="right" valign="top">I2C_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___slave___c.html#gac969e9fc650b7e92a8378abad5778c0e">I2cHandle</a></td></tr>
+<tr class="memdesc:gac969e9fc650b7e92a8378abad5778c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle della struttura I2C che sarà utilizzata.  <a href="#gac969e9fc650b7e92a8378abad5778c0e">Continua...</a><br /></td></tr>
+<tr class="separator:gac969e9fc650b7e92a8378abad5778c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f9d7d3fa652f7756fabc152ee74bf1b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___slave___c.html#ga9f9d7d3fa652f7756fabc152ee74bf1b">rxBuffer</a> [2]</td></tr>
+<tr class="memdesc:ga9f9d7d3fa652f7756fabc152ee74bf1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer di ricezione utilizzato per la comunicazione I2C.  <a href="#ga9f9d7d3fa652f7756fabc152ee74bf1b">Continua...</a><br /></td></tr>
+<tr class="separator:ga9f9d7d3fa652f7756fabc152ee74bf1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45ae512922e22130d464b8bbdf36e051"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___slave___c.html#ga45ae512922e22130d464b8bbdf36e051">add1</a></td></tr>
+<tr class="memdesc:ga45ae512922e22130d464b8bbdf36e051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variabile addendo 1.  <a href="#ga45ae512922e22130d464b8bbdf36e051">Continua...</a><br /></td></tr>
+<tr class="separator:ga45ae512922e22130d464b8bbdf36e051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabcaae55d3e730c48acde8492980b2a3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___slave___c.html#gabcaae55d3e730c48acde8492980b2a3d">add2</a></td></tr>
+<tr class="memdesc:gabcaae55d3e730c48acde8492980b2a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variabile addendo 2.  <a href="#gabcaae55d3e730c48acde8492980b2a3d">Continua...</a><br /></td></tr>
+<tr class="separator:gabcaae55d3e730c48acde8492980b2a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga930b83edda39ee8cfa78dd4574a50bc3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___slave___c.html#ga930b83edda39ee8cfa78dd4574a50bc3">sum</a></td></tr>
+<tr class="memdesc:ga930b83edda39ee8cfa78dd4574a50bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variabile somma.  <a href="#ga930b83edda39ee8cfa78dd4574a50bc3">Continua...</a><br /></td></tr>
+<tr class="separator:ga930b83edda39ee8cfa78dd4574a50bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae10925ec6bdea5014412e197ca15406"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c___slave___c.html#gaae10925ec6bdea5014412e197ca15406">SUM_BIN</a> [32]</td></tr>
+<tr class="memdesc:gaae10925ec6bdea5014412e197ca15406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Effettua il mapping tra un valore intero (da 0 a 31) e la sua codifica in binario su 5 bit. La codifica è data dall'accension di 5 degli 8 led presenti sulla board STM32F3. La corrispondenza bitX =&gt; LEDx è la seguente:  <a href="#gaae10925ec6bdea5014412e197ca15406">Continua...</a><br /></td></tr>
+<tr class="separator:gaae10925ec6bdea5014412e197ca15406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<p>Implementazione di un dispositivo Slave che effettua la somma dei due valori ricevuti dai 2 dispositivi Master. </p>
+<p>Il dispositivo somma i valori ricevuti dai 2 Master e ne visualizza il risultato,in codifca binaria, sugli 8 led a bordo. La comunicazione con i dispositivi Master avviene attraverso una comunicazione seriale I2C. </p>
+<h2 class="groupheader">Documentazione delle definizioni</h2>
+<a class="anchor" id="ga1434b4f003e5e655c3db167d71842a93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I2C_ADDRESS_C&#160;&#160;&#160;0x0C &lt;&lt;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indirizzo del dispositivo Slave C. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle funzioni</h2>
+<a class="anchor" id="gafe461d27b9c48d5921c00d521181f12f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funzione che implementa la logica del programma. </p>
+<p>Il dispositivo Slave resta in attesa di ricevere un valore da uno dei due Master (receive bloccante). Una volta ricevuto, effettua la somma con l'altro addendo (o valore 0 di default se l'altro addendo non è mai stato ricevuto). <br />
+ Il risultato della somma è codificato in binario e mostrato sugli 8 led a bordo. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga840291bc02cba5474a4cb46a9b9566fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main Program. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valori di ritorno</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4fc01d736fe50cf5b977f755b675f11d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funzione di inizializzazione. </p>
+<p>E' la prima funzione ad essere eseguita nel main program. Si occupa di:</p><ul>
+<li>Inizializzare la libreria HAL;</li>
+<li>Configurare il system clock;</li>
+<li>Inizializzare e configurare tutte le periferiche utilizzate;</li>
+<li>Inizializzare le variabili ed eseguire le funzioni richieste al reset del sistema. </li>
+</ul>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle variabili</h2>
+<a class="anchor" id="ga45ae512922e22130d464b8bbdf36e051"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int add1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variabile addendo 1. </p>
+
+</div>
+</div>
+<a class="anchor" id="gabcaae55d3e730c48acde8492980b2a3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int add2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variabile addendo 2. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac969e9fc650b7e92a8378abad5778c0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I2C_HandleTypeDef I2cHandle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle della struttura I2C che sarà utilizzata. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga9f9d7d3fa652f7756fabc152ee74bf1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t rxBuffer[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer di ricezione utilizzato per la comunicazione I2C. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga930b83edda39ee8cfa78dd4574a50bc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variabile somma. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaae10925ec6bdea5014412e197ca15406"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t SUM_BIN[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Effettua il mapping tra un valore intero (da 0 a 31) e la sua codifica in binario su 5 bit. La codifica è data dall'accension di 5 degli 8 led presenti sulla board STM32F3. La corrispondenza bitX =&gt; LEDx è la seguente: </p>
+<ul>
+<li>bit0 =&gt; LED4;</li>
+<li>bit1 =&gt; LED3;</li>
+<li>bit2 =&gt; LED5;</li>
+<li>bit3 =&gt; LED7;</li>
+<li>bit4 =&gt; LED9;</li>
+<li>bit5 =&gt; LED10; <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;HAL_GPIO_WritePin(GPIOE,SUM_BIN[7],GPIO_PIN_SET); //Accende LED5, LED3, LED4 (MSB-&gt;LSB)</div></div><!-- fragment --> </li>
+</ul>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generato da
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

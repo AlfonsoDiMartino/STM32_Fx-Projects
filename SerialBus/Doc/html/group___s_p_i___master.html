@@ -1,0 +1,897 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Bus Seriali: SPI_Master</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Bus Seriali
+   </div>
+   <div id="projectbrief">Progetti Bus Seriali : I2C, SPI, UART con toolchain STM32</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li class="current"><a href="modules.html"><span>Moduli</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li><a href="files.html"><span>File</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group___s_p_i___master.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#enum-members">Tipi enumerati (enum)</a> &#124;
+<a href="#func-members">Funzioni</a> &#124;
+<a href="#var-members">Variabili</a>  </div>
+  <div class="headertitle">
+<div class="title">SPI_Master<div class="ingroups"><a class="el" href="group__bus_seriali.html">BusSeriali</a> &raquo; <a class="el" href="group___s_p_i.html">SPI</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementazione del dispositivo Master che effettua una richiesta di misurazione temperatura alla pressione del tasto blu (user button) e ricevuta la misura, la visualizza su display LCD esterno. <br />
+  
+<a href="#details">Continua...</a></p>
+<div class="dynheader">
+Diagramma di collaborazione per SPI_Master:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group___s_p_i___master.png" border="0" alt="" usemap="#group______s__p__i______master"/>
+<map name="group______s__p__i______master" id="group______s__p__i______master">
+<area shape="rect" id="node2" href="group___s_p_i.html" title="SPI" alt="" coords="5,5,49,32"/>
+</map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr class="memitem:ga31ac298fbbc8a1d6de1dc4577a108232"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga31ac298fbbc8a1d6de1dc4577a108232">B1_Pin</a>&#160;&#160;&#160;GPIO_PIN_13</td></tr>
+<tr class="memdesc:ga31ac298fbbc8a1d6de1dc4577a108232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al Button User.  <a href="#ga31ac298fbbc8a1d6de1dc4577a108232">Continua...</a><br /></td></tr>
+<tr class="separator:ga31ac298fbbc8a1d6de1dc4577a108232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4926b92dcb220e465850d9616c27e171"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga4926b92dcb220e465850d9616c27e171">B1_GPIO_Port</a>&#160;&#160;&#160;GPIOC</td></tr>
+<tr class="memdesc:ga4926b92dcb220e465850d9616c27e171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al Button User.  <a href="#ga4926b92dcb220e465850d9616c27e171">Continua...</a><br /></td></tr>
+<tr class="separator:ga4926b92dcb220e465850d9616c27e171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c6fc611ed1c235b33d00152ceb5ece8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga1c6fc611ed1c235b33d00152ceb5ece8">B1_EXTI_IRQn</a>&#160;&#160;&#160;EXTI15_10_IRQn</td></tr>
+<tr class="memdesc:ga1c6fc611ed1c235b33d00152ceb5ece8"><td class="mdescLeft">&#160;</td><td class="mdescRight">External Line[15:10] Interrupts.  <a href="#ga1c6fc611ed1c235b33d00152ceb5ece8">Continua...</a><br /></td></tr>
+<tr class="separator:ga1c6fc611ed1c235b33d00152ceb5ece8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf17a94dd613cff35c699b06c7c6a2820"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gaf17a94dd613cff35c699b06c7c6a2820">LD2_Pin</a>&#160;&#160;&#160;GPIO_PIN_5</td></tr>
+<tr class="memdesc:gaf17a94dd613cff35c699b06c7c6a2820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al Led2 (Led Verde)  <a href="#gaf17a94dd613cff35c699b06c7c6a2820">Continua...</a><br /></td></tr>
+<tr class="separator:gaf17a94dd613cff35c699b06c7c6a2820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5aff6ddf7fe557e53b048115ad322aa0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga5aff6ddf7fe557e53b048115ad322aa0">LD2_GPIO_Port</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="memdesc:ga5aff6ddf7fe557e53b048115ad322aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al Led2 (Led Verde)  <a href="#ga5aff6ddf7fe557e53b048115ad322aa0">Continua...</a><br /></td></tr>
+<tr class="separator:ga5aff6ddf7fe557e53b048115ad322aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a7bf8fda04f0139622a654cc9ca5530"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga7a7bf8fda04f0139622a654cc9ca5530">LCD_RS_GPIO_Port</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="memdesc:ga7a7bf8fda04f0139622a654cc9ca5530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al segnale di controllo RS.  <a href="#ga7a7bf8fda04f0139622a654cc9ca5530">Continua...</a><br /></td></tr>
+<tr class="separator:ga7a7bf8fda04f0139622a654cc9ca5530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84cf65c2b017bc8fe002c811705bc846"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga84cf65c2b017bc8fe002c811705bc846">LCD_RS_Pin</a>&#160;&#160;&#160;GPIO_PIN_15</td></tr>
+<tr class="memdesc:ga84cf65c2b017bc8fe002c811705bc846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al segnale di controllo RS.  <a href="#ga84cf65c2b017bc8fe002c811705bc846">Continua...</a><br /></td></tr>
+<tr class="separator:ga84cf65c2b017bc8fe002c811705bc846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7aa549ab9cdb985db6f23a573d57108"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gad7aa549ab9cdb985db6f23a573d57108">LCD_RW_GPIO_Port</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="memdesc:gad7aa549ab9cdb985db6f23a573d57108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al segnale di controllo RW.  <a href="#gad7aa549ab9cdb985db6f23a573d57108">Continua...</a><br /></td></tr>
+<tr class="separator:gad7aa549ab9cdb985db6f23a573d57108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4e900ebcc316a242287b4de1cc541ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gad4e900ebcc316a242287b4de1cc541ab">LCD_RW_Pin</a>&#160;&#160;&#160;GPIO_PIN_14</td></tr>
+<tr class="memdesc:gad4e900ebcc316a242287b4de1cc541ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al segnale di controllo RW.  <a href="#gad4e900ebcc316a242287b4de1cc541ab">Continua...</a><br /></td></tr>
+<tr class="separator:gad4e900ebcc316a242287b4de1cc541ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafd4440032d23f5d8df5b2c906c8db40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gaafd4440032d23f5d8df5b2c906c8db40">LCD_E_GPIO_Port</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="memdesc:gaafd4440032d23f5d8df5b2c906c8db40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al segnale di controllo E.  <a href="#gaafd4440032d23f5d8df5b2c906c8db40">Continua...</a><br /></td></tr>
+<tr class="separator:gaafd4440032d23f5d8df5b2c906c8db40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a4056daf7b9ead00ef1320ab049bfa7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga8a4056daf7b9ead00ef1320ab049bfa7">LCD_E_Pin</a>&#160;&#160;&#160;GPIO_PIN_13</td></tr>
+<tr class="memdesc:ga8a4056daf7b9ead00ef1320ab049bfa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al segnale di controllo E.  <a href="#ga8a4056daf7b9ead00ef1320ab049bfa7">Continua...</a><br /></td></tr>
+<tr class="separator:ga8a4056daf7b9ead00ef1320ab049bfa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga580359164c9aa60530f4a81ecf2d59b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga580359164c9aa60530f4a81ecf2d59b5">LCD_D0_GPIO_Port</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="memdesc:ga580359164c9aa60530f4a81ecf2d59b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al segnale Dato D0.  <a href="#ga580359164c9aa60530f4a81ecf2d59b5">Continua...</a><br /></td></tr>
+<tr class="separator:ga580359164c9aa60530f4a81ecf2d59b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga007f00a98d0e6e70e6bf766bcfa2d0fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga007f00a98d0e6e70e6bf766bcfa2d0fc">LCD_D0_Pin</a>&#160;&#160;&#160;GPIO_PIN_1</td></tr>
+<tr class="memdesc:ga007f00a98d0e6e70e6bf766bcfa2d0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al segnale Dato D0.  <a href="#ga007f00a98d0e6e70e6bf766bcfa2d0fc">Continua...</a><br /></td></tr>
+<tr class="separator:ga007f00a98d0e6e70e6bf766bcfa2d0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f82b0d2f4a1a6a9f110584b89a18a19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga1f82b0d2f4a1a6a9f110584b89a18a19">LCD_D1_GPIO_Port</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="memdesc:ga1f82b0d2f4a1a6a9f110584b89a18a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al segnale Dato D1.  <a href="#ga1f82b0d2f4a1a6a9f110584b89a18a19">Continua...</a><br /></td></tr>
+<tr class="separator:ga1f82b0d2f4a1a6a9f110584b89a18a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4784ee1b05c61465610538db75db0c08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga4784ee1b05c61465610538db75db0c08">LCD_D1_Pin</a>&#160;&#160;&#160;GPIO_PIN_2</td></tr>
+<tr class="memdesc:ga4784ee1b05c61465610538db75db0c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al segnale Dato D1.  <a href="#ga4784ee1b05c61465610538db75db0c08">Continua...</a><br /></td></tr>
+<tr class="separator:ga4784ee1b05c61465610538db75db0c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae64e1b2b85356243d8ce9a77742423df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gae64e1b2b85356243d8ce9a77742423df">LCD_D2_GPIO_Port</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="memdesc:gae64e1b2b85356243d8ce9a77742423df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al segnale Dato D2.  <a href="#gae64e1b2b85356243d8ce9a77742423df">Continua...</a><br /></td></tr>
+<tr class="separator:gae64e1b2b85356243d8ce9a77742423df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1980352aac0da31ff304e914a1722d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gac1980352aac0da31ff304e914a1722d1">LCD_D2_Pin</a>&#160;&#160;&#160;GPIO_PIN_12</td></tr>
+<tr class="memdesc:gac1980352aac0da31ff304e914a1722d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al segnale Dato D2.  <a href="#gac1980352aac0da31ff304e914a1722d1">Continua...</a><br /></td></tr>
+<tr class="separator:gac1980352aac0da31ff304e914a1722d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac91a70efedee5362c8ad4932569a18fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gac91a70efedee5362c8ad4932569a18fd">LCD_D3_GPIO_Port</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="memdesc:gac91a70efedee5362c8ad4932569a18fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al segnale Dato D3.  <a href="#gac91a70efedee5362c8ad4932569a18fd">Continua...</a><br /></td></tr>
+<tr class="separator:gac91a70efedee5362c8ad4932569a18fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9686e1553c63091b0d6bc0b3804a8348"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga9686e1553c63091b0d6bc0b3804a8348">LCD_D3_Pin</a>&#160;&#160;&#160;GPIO_PIN_11</td></tr>
+<tr class="memdesc:ga9686e1553c63091b0d6bc0b3804a8348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al segnale Dato D3.  <a href="#ga9686e1553c63091b0d6bc0b3804a8348">Continua...</a><br /></td></tr>
+<tr class="separator:ga9686e1553c63091b0d6bc0b3804a8348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa05fd750a9a62de2bdb8568cfdb09076"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gaa05fd750a9a62de2bdb8568cfdb09076">LCD_D4_GPIO_Port</a>&#160;&#160;&#160;GPIOA</td></tr>
+<tr class="memdesc:gaa05fd750a9a62de2bdb8568cfdb09076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al segnale Dato D4.  <a href="#gaa05fd750a9a62de2bdb8568cfdb09076">Continua...</a><br /></td></tr>
+<tr class="separator:gaa05fd750a9a62de2bdb8568cfdb09076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb2684e750191210c0e4e3929babcb0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gabb2684e750191210c0e4e3929babcb0a">LCD_D4_Pin</a>&#160;&#160;&#160;GPIO_PIN_12</td></tr>
+<tr class="memdesc:gabb2684e750191210c0e4e3929babcb0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al segnale Dato D4.  <a href="#gabb2684e750191210c0e4e3929babcb0a">Continua...</a><br /></td></tr>
+<tr class="separator:gabb2684e750191210c0e4e3929babcb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93df360fe1d36333db0665f3fa0bcf65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga93df360fe1d36333db0665f3fa0bcf65">LCD_D5_GPIO_Port</a>&#160;&#160;&#160;GPIOC</td></tr>
+<tr class="memdesc:ga93df360fe1d36333db0665f3fa0bcf65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al segnale Dato D5.  <a href="#ga93df360fe1d36333db0665f3fa0bcf65">Continua...</a><br /></td></tr>
+<tr class="separator:ga93df360fe1d36333db0665f3fa0bcf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac87b3cda0ef2f915a686c40923b87348"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gac87b3cda0ef2f915a686c40923b87348">LCD_D5_Pin</a>&#160;&#160;&#160;GPIO_PIN_5</td></tr>
+<tr class="memdesc:gac87b3cda0ef2f915a686c40923b87348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al segnale Dato D5.  <a href="#gac87b3cda0ef2f915a686c40923b87348">Continua...</a><br /></td></tr>
+<tr class="separator:gac87b3cda0ef2f915a686c40923b87348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaabeecb0506ef73983dfb5b142285d93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gaaabeecb0506ef73983dfb5b142285d93">LCD_D6_GPIO_Port</a>&#160;&#160;&#160;GPIOC</td></tr>
+<tr class="memdesc:gaaabeecb0506ef73983dfb5b142285d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al segnale Dato D6.  <a href="#gaaabeecb0506ef73983dfb5b142285d93">Continua...</a><br /></td></tr>
+<tr class="separator:gaaabeecb0506ef73983dfb5b142285d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadca1e6ee0f52cd22f8ca3b84d0800f98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gadca1e6ee0f52cd22f8ca3b84d0800f98">LCD_D6_Pin</a>&#160;&#160;&#160;GPIO_PIN_6</td></tr>
+<tr class="memdesc:gadca1e6ee0f52cd22f8ca3b84d0800f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al segnale Dato D6.  <a href="#gadca1e6ee0f52cd22f8ca3b84d0800f98">Continua...</a><br /></td></tr>
+<tr class="separator:gadca1e6ee0f52cd22f8ca3b84d0800f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac297f9c095004eafd7756ca2b891d03a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gac297f9c095004eafd7756ca2b891d03a">LCD_D7_GPIO_Port</a>&#160;&#160;&#160;GPIOC</td></tr>
+<tr class="memdesc:gac297f9c095004eafd7756ca2b891d03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Porto associato al segnale Dato D7.  <a href="#gac297f9c095004eafd7756ca2b891d03a">Continua...</a><br /></td></tr>
+<tr class="separator:gac297f9c095004eafd7756ca2b891d03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9a02c31a2dc1c28e86cfdf505732029"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gaf9a02c31a2dc1c28e86cfdf505732029">LCD_D7_Pin</a>&#160;&#160;&#160;GPIO_PIN_8</td></tr>
+<tr class="memdesc:gaf9a02c31a2dc1c28e86cfdf505732029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin associato al segnale Dato D7.  <a href="#gaf9a02c31a2dc1c28e86cfdf505732029">Continua...</a><br /></td></tr>
+<tr class="separator:gaf9a02c31a2dc1c28e86cfdf505732029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f3fcda1f2b432041a547222584f10c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga5f3fcda1f2b432041a547222584f10c3">Error_Handler</a>()&#160;&#160;&#160;<a class="el" href="group___u_a_r_t___f3.html#ga829116a51f1db1a72ebd1120f60719d5">_Error_Handler</a>(__FILE__, __LINE__)</td></tr>
+<tr class="separator:ga5f3fcda1f2b432041a547222584f10c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Tipi enumerati (enum)</h2></td></tr>
+<tr class="memitem:gae61e882fa35a0311aed7867744599e12"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gae61e882fa35a0311aed7867744599e12">StateTypeDef</a> { <a class="el" href="group___s_p_i___master.html#ggae61e882fa35a0311aed7867744599e12afd6a0e4343048b10646dd2976cc5ad18">IDLE</a> = 0, 
+<a class="el" href="group___s_p_i___master.html#ggae61e882fa35a0311aed7867744599e12a1061be6c3fb88d32829cba6f6b2be304">RUNNING</a> = 1
+ }<tr class="memdesc:gae61e882fa35a0311aed7867744599e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definisce i due possibili stati di esecuzione della macchina. <br />
+  <a href="group___s_p_i___master.html#gae61e882fa35a0311aed7867744599e12">Continua...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:gae61e882fa35a0311aed7867744599e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:ga0cd91fd3a9608559c2a87a8ba6cba55f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga0cd91fd3a9608559c2a87a8ba6cba55f">HAL_GPIO_EXTI_Callback</a> (uint16_t GPIO_Pin)</td></tr>
+<tr class="memdesc:ga0cd91fd3a9608559c2a87a8ba6cba55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback associata alla pressione del BUTTON USER.  <a href="#ga0cd91fd3a9608559c2a87a8ba6cba55f">Continua...</a><br /></td></tr>
+<tr class="separator:ga0cd91fd3a9608559c2a87a8ba6cba55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3b847ccfc77d14bf8d346f46f6f1bb4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gaf3b847ccfc77d14bf8d346f46f6f1bb4">richiediTemperatura</a> (SPI_HandleTypeDef *hspi)</td></tr>
+<tr class="memdesc:gaf3b847ccfc77d14bf8d346f46f6f1bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione che realizza la richiesta di una nuova misurazione di temperatura alla board "slave" cui è collegato il sensore di temperatura.  <a href="#gaf3b847ccfc77d14bf8d346f46f6f1bb4">Continua...</a><br /></td></tr>
+<tr class="separator:gaf3b847ccfc77d14bf8d346f46f6f1bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b010deb8a0027fc6e3bd226de4f1fab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga5b010deb8a0027fc6e3bd226de4f1fab">visualizzaTemperatura</a> (<a class="el" href="struct_h_d44780___l_c_d__t.html">HD44780_LCD_t</a> *<a class="el" href="group___s_p_i___master.html#ga473ac1c2f8875485b678a01d166058f4">lcd</a>, uint8_t temp)</td></tr>
+<tr class="memdesc:ga5b010deb8a0027fc6e3bd226de4f1fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione di stampa su display LCD.  <a href="#ga5b010deb8a0027fc6e3bd226de4f1fab">Continua...</a><br /></td></tr>
+<tr class="separator:ga5b010deb8a0027fc6e3bd226de4f1fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga597498d6e86a0882a4740213b75f2521"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga597498d6e86a0882a4740213b75f2521">spiTransaction</a> (SPI_HandleTypeDef *hspi, uint8_t *spiTxBuffer, uint8_t *spiRXBuffer)</td></tr>
+<tr class="memdesc:ga597498d6e86a0882a4740213b75f2521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione che implementa una transazione tra Master e Slave.  <a href="#ga597498d6e86a0882a4740213b75f2521">Continua...</a><br /></td></tr>
+<tr class="separator:ga597498d6e86a0882a4740213b75f2521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7dfd9b79bc5a37d7df40207afbc5431f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga7dfd9b79bc5a37d7df40207afbc5431f">setup</a> (void)</td></tr>
+<tr class="memdesc:ga7dfd9b79bc5a37d7df40207afbc5431f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione di inizializzazione.  <a href="#ga7dfd9b79bc5a37d7df40207afbc5431f">Continua...</a><br /></td></tr>
+<tr class="separator:ga7dfd9b79bc5a37d7df40207afbc5431f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b33edabd7f1c4e4a0bf32c67269be2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga0b33edabd7f1c4e4a0bf32c67269be2f">loop</a> (void)</td></tr>
+<tr class="memdesc:ga0b33edabd7f1c4e4a0bf32c67269be2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione che implementa la logica del programma.  <a href="#ga0b33edabd7f1c4e4a0bf32c67269be2f">Continua...</a><br /></td></tr>
+<tr class="separator:ga0b33edabd7f1c4e4a0bf32c67269be2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="separator:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variabili</h2></td></tr>
+<tr class="memitem:ga9c6222bae4d0328dd843ae099623b40b"><td class="memItemLeft" align="right" valign="top">SPI_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga9c6222bae4d0328dd843ae099623b40b">hspi1</a></td></tr>
+<tr class="memdesc:ga9c6222bae4d0328dd843ae099623b40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle della struttura SPI che sara' inizializzata.  <a href="#ga9c6222bae4d0328dd843ae099623b40b">Continua...</a><br /></td></tr>
+<tr class="separator:ga9c6222bae4d0328dd843ae099623b40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga473ac1c2f8875485b678a01d166058f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_h_d44780___l_c_d__t.html">HD44780_LCD_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#ga473ac1c2f8875485b678a01d166058f4">lcd</a></td></tr>
+<tr class="memdesc:ga473ac1c2f8875485b678a01d166058f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle della struttura HD44780 che sara' inizializzata.  <a href="#ga473ac1c2f8875485b678a01d166058f4">Continua...</a><br /></td></tr>
+<tr class="separator:ga473ac1c2f8875485b678a01d166058f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0153f7990894ba1b29df2afc5855465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___s_p_i___master.html#gae61e882fa35a0311aed7867744599e12">StateTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___master.html#gaa0153f7990894ba1b29df2afc5855465">stato</a></td></tr>
+<tr class="memdesc:gaa0153f7990894ba1b29df2afc5855465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variabile di stato che contiene lo stato corrente dell'elaborazione.  <a href="#gaa0153f7990894ba1b29df2afc5855465">Continua...</a><br /></td></tr>
+<tr class="separator:gaa0153f7990894ba1b29df2afc5855465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<p>Implementazione del dispositivo Master che effettua una richiesta di misurazione temperatura alla pressione del tasto blu (user button) e ricevuta la misura, la visualizza su display LCD esterno. <br />
+ </p>
+<p>Il dispositivo è configurato come una macchina a 2 stati:</p><ul>
+<li>IDLE indica lo stato di riposo in cui la macchina si porta al reset o dopo aver servito una richiesta di misurazione temperatura e successiva visualizzazione su display. Una richiesta di misurazione (o altra operazione o funzionalita' aggiunta successivamente) viene servita solo se la macchina si trova in questo stato. La macchina passa dallo stato IDLE allo stato RUNNING alla pressione del tasto blu.</li>
+<li>RUNNING indica lo stato di servizio in corso della richiesta e se la macchina si trova in questo stato ignora altre richieste scatenate dalla pressione del tasto blu (user button). La macchina ritorna nello stato IDLE dopo aver terminato la richiesta che l'ha portata nello stato RUNNING, richiesta che si ritiene conclusa quando il valore di temperatura ricevuto viene visualizzato sul diplay LCD esterno. La comunicazione con il dispositivo Slave è realizzata su bus seriale SPI. </li>
+</ul>
+<h2 class="groupheader">Documentazione delle definizioni</h2>
+<a class="anchor" id="ga1c6fc611ed1c235b33d00152ceb5ece8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B1_EXTI_IRQn&#160;&#160;&#160;EXTI15_10_IRQn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>External Line[15:10] Interrupts. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4926b92dcb220e465850d9616c27e171"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B1_GPIO_Port&#160;&#160;&#160;GPIOC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al Button User. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga31ac298fbbc8a1d6de1dc4577a108232"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B1_Pin&#160;&#160;&#160;GPIO_PIN_13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al Button User. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga5f3fcda1f2b432041a547222584f10c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Error_Handler</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">void</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group___u_a_r_t___f3.html#ga829116a51f1db1a72ebd1120f60719d5">_Error_Handler</a>(__FILE__, __LINE__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga580359164c9aa60530f4a81ecf2d59b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D0_GPIO_Port&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al segnale Dato D0. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga007f00a98d0e6e70e6bf766bcfa2d0fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D0_Pin&#160;&#160;&#160;GPIO_PIN_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al segnale Dato D0. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga1f82b0d2f4a1a6a9f110584b89a18a19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D1_GPIO_Port&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al segnale Dato D1. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4784ee1b05c61465610538db75db0c08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D1_Pin&#160;&#160;&#160;GPIO_PIN_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al segnale Dato D1. </p>
+
+</div>
+</div>
+<a class="anchor" id="gae64e1b2b85356243d8ce9a77742423df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D2_GPIO_Port&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al segnale Dato D2. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac1980352aac0da31ff304e914a1722d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D2_Pin&#160;&#160;&#160;GPIO_PIN_12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al segnale Dato D2. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac91a70efedee5362c8ad4932569a18fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D3_GPIO_Port&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al segnale Dato D3. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga9686e1553c63091b0d6bc0b3804a8348"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D3_Pin&#160;&#160;&#160;GPIO_PIN_11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al segnale Dato D3. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaa05fd750a9a62de2bdb8568cfdb09076"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D4_GPIO_Port&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al segnale Dato D4. </p>
+
+</div>
+</div>
+<a class="anchor" id="gabb2684e750191210c0e4e3929babcb0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D4_Pin&#160;&#160;&#160;GPIO_PIN_12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al segnale Dato D4. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga93df360fe1d36333db0665f3fa0bcf65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D5_GPIO_Port&#160;&#160;&#160;GPIOC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al segnale Dato D5. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac87b3cda0ef2f915a686c40923b87348"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D5_Pin&#160;&#160;&#160;GPIO_PIN_5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al segnale Dato D5. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaaabeecb0506ef73983dfb5b142285d93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D6_GPIO_Port&#160;&#160;&#160;GPIOC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al segnale Dato D6. </p>
+
+</div>
+</div>
+<a class="anchor" id="gadca1e6ee0f52cd22f8ca3b84d0800f98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D6_Pin&#160;&#160;&#160;GPIO_PIN_6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al segnale Dato D6. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac297f9c095004eafd7756ca2b891d03a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D7_GPIO_Port&#160;&#160;&#160;GPIOC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al segnale Dato D7. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaf9a02c31a2dc1c28e86cfdf505732029"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_D7_Pin&#160;&#160;&#160;GPIO_PIN_8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al segnale Dato D7. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaafd4440032d23f5d8df5b2c906c8db40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_E_GPIO_Port&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al segnale di controllo E. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga8a4056daf7b9ead00ef1320ab049bfa7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_E_Pin&#160;&#160;&#160;GPIO_PIN_13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al segnale di controllo E. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga7a7bf8fda04f0139622a654cc9ca5530"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_RS_GPIO_Port&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al segnale di controllo RS. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga84cf65c2b017bc8fe002c811705bc846"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_RS_Pin&#160;&#160;&#160;GPIO_PIN_15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al segnale di controllo RS. </p>
+
+</div>
+</div>
+<a class="anchor" id="gad7aa549ab9cdb985db6f23a573d57108"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_RW_GPIO_Port&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al segnale di controllo RW. </p>
+
+</div>
+</div>
+<a class="anchor" id="gad4e900ebcc316a242287b4de1cc541ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_RW_Pin&#160;&#160;&#160;GPIO_PIN_14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al segnale di controllo RW. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga5aff6ddf7fe557e53b048115ad322aa0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LD2_GPIO_Port&#160;&#160;&#160;GPIOA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Porto associato al Led2 (Led Verde) </p>
+
+</div>
+</div>
+<a class="anchor" id="gaf17a94dd613cff35c699b06c7c6a2820"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LD2_Pin&#160;&#160;&#160;GPIO_PIN_5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pin associato al Led2 (Led Verde) </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione dei tipi enumerati</h2>
+<a class="anchor" id="gae61e882fa35a0311aed7867744599e12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___s_p_i___master.html#gae61e882fa35a0311aed7867744599e12">StateTypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definisce i due possibili stati di esecuzione della macchina. <br />
+ </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valori del tipo enumerato</th></tr><tr><td class="fieldname"><a class="anchor" id="ggae61e882fa35a0311aed7867744599e12afd6a0e4343048b10646dd2976cc5ad18"></a>IDLE&#160;</td><td class="fielddoc">
+<p>Lo stato IDLE è lo stato di reset e riposo, in attesa di una richiesta di misurazione. <br />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae61e882fa35a0311aed7867744599e12a1061be6c3fb88d32829cba6f6b2be304"></a>RUNNING&#160;</td><td class="fielddoc">
+<p>Lo stato RUNNING è lo stato di servizio di una richiesta. Quando si è in questo stato, non verranno accettate altre richieste di misurazione. <br />
+ </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle funzioni</h2>
+<a class="anchor" id="ga0cd91fd3a9608559c2a87a8ba6cba55f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_GPIO_EXTI_Callback </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>GPIO_Pin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback associata alla pressione del BUTTON USER. </p>
+<p>Alla pressione del tasto blu e' associata una variazione di stato che permette di servire in modo corretto una richiesta di misurazione di temperatura. <br />
+ In particolare, nel caso in cui si e' nello stato di reset, indicato come IDLE, posso servire una richiesta di misurazione temperatura. Setto la variabile di stato a RUNNING, così da rifiutare nuove richieste fino a quando quella in corso non viene terminata, altrimenti non viene compiuta alcuna operazione.</p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">GPIO_Pin</td><td>: specifica il pin connesso alla linea EXTI. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">stato</td><td>: variabile associata allo stato del dispositivo Master. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0b33edabd7f1c4e4a0bf32c67269be2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funzione che implementa la logica del programma. </p>
+<p>Ogni 5 secondi si valuta lo stato in cui si trova la macchina: se lo stato è RUNNING, si effettua una misura di temperatura e il risultato è visualizzato sul display LCD esterno. Lo stato è poi riportato a IDLE, così da poter accettare un'altra richiesta. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga840291bc02cba5474a4cb46a9b9566fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaf3b847ccfc77d14bf8d346f46f6f1bb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t richiediTemperatura </td>
+          <td>(</td>
+          <td class="paramtype">SPI_HandleTypeDef *&#160;</td>
+          <td class="paramname"><em>hspi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funzione che realizza la richiesta di una nuova misurazione di temperatura alla board "slave" cui è collegato il sensore di temperatura. </p>
+<p>Vengono effettuate due transazioni SPI complete (TxRX):</p><ol type="1">
+<li>nella prima transazione viene "svegliata" la board slave e viene inviato il codice 0xFF, a cui è stato associato, lato slave, l'azione di "avvio misura su sensore di temperatura esterno". La scelta di inviare un codice che viene valutato lato slave è giustificata dal fatto che, se necessario, è possibile aggiungere nuovi codici ai quali asscoiare, lato slave, nuove operazioni o funzionalità (per esempio, posso aggiungere il codice 0x01 e associare, lato slave, l'operazione di "misurazione sul dipositivo accellerometro").</li>
+<li>nella seconda transazione viene inviato un dummy byte (0x00) e ricevuto il valore di temperatura misurato lato slave.</li>
+</ol>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hspi</td><td>: puntatore alla struttura SPI_HandleTypedef che contiene la configurazione del modulo SPI. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valori di ritorno</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">temp</td><td>: Valore di temperatura misurata. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7dfd9b79bc5a37d7df40207afbc5431f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funzione di inizializzazione. </p>
+<p>E' la prima funzione ad essere eseguita nel main program. Si occupa di:</p><ul>
+<li>Inizializzare la libreria HAL;</li>
+<li>Configurare il system clock;</li>
+<li>Inizializzare e configurare tutte le periferiche utilizzate;</li>
+<li>Inizializzare le variabili ed eseguire le funzioni richieste al reset del sistema. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="ga597498d6e86a0882a4740213b75f2521"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spiTransaction </td>
+          <td>(</td>
+          <td class="paramtype">SPI_HandleTypeDef *&#160;</td>
+          <td class="paramname"><em>hspi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>spiTxBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>spiRXBuffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funzione che implementa una transazione tra Master e Slave. </p>
+<p>La transazione è realizzata utilizzando la primitiva HAL_SPI_TransmitReceive, che permette l'invio e la ricezione di una fissata quantita' di dati, in modalita' bloccante, con dimensione del blocco fissata in fase di configurazione del modulo SPI e numero di blocchi definito dal parametro Size.</p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hspi</td><td>: puntatore alla struttura SPI_HandleTypedef che contiene la configurazione del modulo SPI. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spiTxBuffer</td><td>: puntatore al buffer di trasmissione dati. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">spiRxBuffer</td><td>: puntatore al buffer di ricezione dati. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5b010deb8a0027fc6e3bd226de4f1fab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void visualizzaTemperatura </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_h_d44780___l_c_d__t.html">HD44780_LCD_t</a> *&#160;</td>
+          <td class="paramname"><em>lcd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>temp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funzione di stampa su display LCD. </p>
+<p>La funzione utilizza delle primitive definite ad-hoc per il display LCD utilizzato, nello specifico un dipositivo HD44780, la cui documentazione e driverPack completo è disponibile nei riferimenti.</p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lcd</td><td>: puntatore alla struttura <a class="el" href="struct_h_d44780___l_c_d__t.html" title="L&#39;oggetto di tipo HD44780_LCD_t rappresenta un device HD44780. ">HD44780_LCD_t</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">temp</td><td>: il valore di temperatura da visualizzare. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle variabili</h2>
+<a class="anchor" id="ga9c6222bae4d0328dd843ae099623b40b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SPI_HandleTypeDef hspi1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle della struttura SPI che sara' inizializzata. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga473ac1c2f8875485b678a01d166058f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_h_d44780___l_c_d__t.html">HD44780_LCD_t</a> lcd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle della struttura HD44780 che sara' inizializzata. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaa0153f7990894ba1b29df2afc5855465"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___s_p_i___master.html#gae61e882fa35a0311aed7867744599e12">StateTypeDef</a> stato</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variabile di stato che contiene lo stato corrente dell'elaborazione. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generato da
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

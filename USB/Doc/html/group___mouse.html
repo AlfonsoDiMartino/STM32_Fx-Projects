@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>USB Project: Mouse</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">USB Project
+   </div>
+   <div id="projectbrief">Progetti di periferiche usb con toolchain STM32</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li class="current"><a href="modules.html"><span>Moduli</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group___mouse.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Strutture dati</a> &#124;
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#func-members">Funzioni</a> &#124;
+<a href="#var-members">Variabili</a>  </div>
+  <div class="headertitle">
+<div class="title">Mouse<div class="ingroups"><a class="el" href="group___u_s_b_d.html">USBD</a> &raquo; <a class="el" href="group___h_i_d.html">HID</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Realizzazione di una periferica USB HID Mouse.  
+<a href="#details">Continua...</a></p>
+<div class="dynheader">
+Diagramma di collaborazione per Mouse:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group___mouse.png" border="0" alt="" usemap="#group______mouse"/>
+<map name="group______mouse" id="group______mouse">
+<area shape="rect" id="node2" href="group___h_i_d.html" title="HID" alt="" coords="5,5,52,32"/>
+</map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Strutture dati</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structaccellero__t.html">accellero_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struttura che astrae le 3 componenti di accellerazione angolare lungo gli assi X, Y, Z.  <a href="structaccellero__t.html#details">Continua...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmouse_h_i_d__t.html">mouseHID_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struttura che astrae il device Mouse.  <a href="structmouse_h_i_d__t.html#details">Continua...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr class="memitem:gac9562ee4ecb3b8aeebeb04656e7e57a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mouse.html#gac9562ee4ecb3b8aeebeb04656e7e57a9">s</a>&#160;&#160;&#160;0.1</td></tr>
+<tr class="memdesc:gac9562ee4ecb3b8aeebeb04656e7e57a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valore di sensitivita' con cui il valore della componente di accellerazione è scalato.  <a href="#gac9562ee4ecb3b8aeebeb04656e7e57a9">Continua...</a><br /></td></tr>
+<tr class="separator:gac9562ee4ecb3b8aeebeb04656e7e57a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b6bc5744508bb6bc6c0c0cef633c672"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mouse.html#ga2b6bc5744508bb6bc6c0c0cef633c672">soglia</a>&#160;&#160;&#160;64</td></tr>
+<tr class="memdesc:ga2b6bc5744508bb6bc6c0c0cef633c672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Soglia che permette di regolare lo la sensibilità minima del dispositivo.  <a href="#ga2b6bc5744508bb6bc6c0c0cef633c672">Continua...</a><br /></td></tr>
+<tr class="separator:ga2b6bc5744508bb6bc6c0c0cef633c672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:ga70af21c671abfcc773614a9a4f63d920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mouse.html#ga70af21c671abfcc773614a9a4f63d920">SystemClock_Config</a> (void)</td></tr>
+<tr class="memdesc:ga70af21c671abfcc773614a9a4f63d920"><td class="mdescLeft">&#160;</td><td class="mdescRight">System Clock Configuration.  <a href="#ga70af21c671abfcc773614a9a4f63d920">Continua...</a><br /></td></tr>
+<tr class="separator:ga70af21c671abfcc773614a9a4f63d920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7dfd9b79bc5a37d7df40207afbc5431f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mouse.html#ga7dfd9b79bc5a37d7df40207afbc5431f">setup</a> (void)</td></tr>
+<tr class="memdesc:ga7dfd9b79bc5a37d7df40207afbc5431f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione di inizializzazione.<br />
+  <a href="#ga7dfd9b79bc5a37d7df40207afbc5431f">Continua...</a><br /></td></tr>
+<tr class="separator:ga7dfd9b79bc5a37d7df40207afbc5431f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b33edabd7f1c4e4a0bf32c67269be2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mouse.html#ga0b33edabd7f1c4e4a0bf32c67269be2f">loop</a> (void)</td></tr>
+<tr class="memdesc:ga0b33edabd7f1c4e4a0bf32c67269be2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione che implementa la logica del programma.<br />
+  <a href="#ga0b33edabd7f1c4e4a0bf32c67269be2f">Continua...</a><br /></td></tr>
+<tr class="separator:ga0b33edabd7f1c4e4a0bf32c67269be2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mouse.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="separator:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga829116a51f1db1a72ebd1120f60719d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mouse.html#ga829116a51f1db1a72ebd1120f60719d5">_Error_Handler</a> (char *file, int line)</td></tr>
+<tr class="memdesc:ga829116a51f1db1a72ebd1120f60719d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is executed in case of error occurrence.  <a href="#ga829116a51f1db1a72ebd1120f60719d5">Continua...</a><br /></td></tr>
+<tr class="separator:ga829116a51f1db1a72ebd1120f60719d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variabili</h2></td></tr>
+<tr class="memitem:gac59974e02cd3fc7c092fcdb38e4a1c29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmouse_h_i_d__t.html">mouseHID_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mouse.html#gac59974e02cd3fc7c092fcdb38e4a1c29">mouseHID</a></td></tr>
+<tr class="memdesc:gac59974e02cd3fc7c092fcdb38e4a1c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oggetto di tipo <a class="el" href="structmouse_h_i_d__t.html" title="Struttura che astrae il device Mouse. ">mouseHID_t</a>.  <a href="#gac59974e02cd3fc7c092fcdb38e4a1c29">Continua...</a><br /></td></tr>
+<tr class="separator:gac59974e02cd3fc7c092fcdb38e4a1c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9da5da1694a684641bc5804b3b5cd4fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structaccellero__t.html">accellero_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mouse.html#ga9da5da1694a684641bc5804b3b5cd4fd">accellero</a></td></tr>
+<tr class="memdesc:ga9da5da1694a684641bc5804b3b5cd4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oggetto di tipo <a class="el" href="structaccellero__t.html" title="Struttura che astrae le 3 componenti di accellerazione angolare lungo gli assi X, Y...">accellero_t</a>.  <a href="#ga9da5da1694a684641bc5804b3b5cd4fd">Continua...</a><br /></td></tr>
+<tr class="separator:ga9da5da1694a684641bc5804b3b5cd4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga365f7d0a26864fe52550de2eb1d5c125"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mouse.html#ga365f7d0a26864fe52550de2eb1d5c125">value_x</a></td></tr>
+<tr class="memdesc:ga365f7d0a26864fe52550de2eb1d5c125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rappresenta lo spostamento lungo l'asse x del mouse.  <a href="#ga365f7d0a26864fe52550de2eb1d5c125">Continua...</a><br /></td></tr>
+<tr class="separator:ga365f7d0a26864fe52550de2eb1d5c125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0309cefcf86c2c531a958a054242895a"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___mouse.html#ga0309cefcf86c2c531a958a054242895a">value_y</a></td></tr>
+<tr class="memdesc:ga0309cefcf86c2c531a958a054242895a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rappresenta lo spostamento lungo l'asse y del mouse.  <a href="#ga0309cefcf86c2c531a958a054242895a">Continua...</a><br /></td></tr>
+<tr class="separator:ga0309cefcf86c2c531a958a054242895a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<p>Realizzazione di una periferica USB HID Mouse. </p>
+<p>Progetto di una periferica usb hid che definisce un device di tipo mouse.<br />
+ Per gli spostamenti del cursore viene utilizzato l'accellerometro a bordo, che riporta le accellerazioni angolari lungo i tre assi X, Y, Z. I valori di accellerazione angolare letti vengono processati tenendo conto di opportuni valori di <a class="el" href="group___mouse.html#ga2b6bc5744508bb6bc6c0c0cef633c672" title="Soglia che permette di regolare lo la sensibilità minima del dispositivo. ">soglia</a> e sensitivita' (<a class="el" href="group___mouse.html#gac9562ee4ecb3b8aeebeb04656e7e57a9" title="Valore di sensitivita&#39; con cui il valore della componente di accellerazione è scalato. ">s</a>) che sono personalizzabili a seconda delle esigenze di progetto o semplicemente a seconda della sensibilita' percepita e voluta dall'utente. <br />
+ La pressione del tasto blu della board (User Button) viene acquisita come pressione del tasto sinistro del mouse. <br />
+ </p>
+<h2 class="groupheader">Documentazione delle definizioni</h2>
+<a class="anchor" id="gac9562ee4ecb3b8aeebeb04656e7e57a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define s&#160;&#160;&#160;0.1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Valore di sensitivita' con cui il valore della componente di accellerazione è scalato. </p>
+<p>Tale valore determina la sensibilità percepita dall'utente del device.<br />
+ E' anche necessario per scalare correttamente su 8 bit il valore della componente accellerazione che invece è espresso su 16 bit.<br />
+ </p>
+
+</div>
+</div>
+<a class="anchor" id="ga2b6bc5744508bb6bc6c0c0cef633c672"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define soglia&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Soglia che permette di regolare lo la sensibilità minima del dispositivo. </p>
+<p>La regolazione della soglia permette di filtrare i valori della componente accellerazione che rientrano nel range di valori di riposo, ossia valori per i quali il cursore deve restare fermo.<br />
+ Per esempio :</p><ul>
+<li>asseX : se -soglia &lt; asseX &lt; soglia, allora considero pari a zero la componente asseX;</li>
+<li>asseY : se -soglia &lt; asseY &lt; soglia, allora considero pari a zero la componente asseY; </li>
+</ul>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle funzioni</h2>
+<a class="anchor" id="ga829116a51f1db1a72ebd1120f60719d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Error_Handler </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function is executed in case of error occurrence. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valori di ritorno</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0b33edabd7f1c4e4a0bf32c67269be2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funzione che implementa la logica del programma.<br />
+ </p>
+<p>Ogni 50 milli secondi :</p><ul>
+<li>viene valutata la pressione del tasto blu (button User) e aggiornato il campo buttons dell'oggetto mouseHID;</li>
+<li>viene effettuata la lettura delle componenti di accellerazione angolare lungo i 3 assi (sfruttando l'accellerometro a bordo) aggiornati i campi dell'oggetto muoseHID;</li>
+<li>vengono aggiornati i campi x e y del'oggetto mouseHID. Questo è fatto tenendo conto del valore di soglia e sensitivita' (s) impostato;</li>
+<li>viene invocata la funzione "uint8_t USBD_HID_SendReport(USBD_HandleTypeDef  *pdev, uint8_t *report,uint16_t len)", tramite la quale viene comunicato il report contenente i dati acquisiti;</li>
+<li>prima di uscire vengono resettati tutti i valori della struttura mouseHID. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="ga840291bc02cba5474a4cb46a9b9566fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga7dfd9b79bc5a37d7df40207afbc5431f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funzione di inizializzazione.<br />
+ </p>
+<p>E' la prima funzione ad essere eseguita nel main program. Si occupa di:</p><ul>
+<li>inizializzare la libreria HAL;</li>
+<li>configurare il system clock;</li>
+<li>inizializzare e configurare tutte le periferiche utilizzate;</li>
+<li>inizializzare le variabili ed eseguire le funzioni richieste al reset del sistema. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="ga70af21c671abfcc773614a9a4f63d920"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SystemClock_Config </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>System Clock Configuration. </p>
+<p>Configure the main internal regulator output voltage</p>
+<p>Initializes the CPU, AHB and APB busses clocks</p>
+<p>Initializes the CPU, AHB and APB busses clocks</p>
+<p>Configure the Systick interrupt time</p>
+<p>Configure the Systick</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle variabili</h2>
+<a class="anchor" id="ga9da5da1694a684641bc5804b3b5cd4fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structaccellero__t.html">accellero_t</a> accellero</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Oggetto di tipo <a class="el" href="structaccellero__t.html" title="Struttura che astrae le 3 componenti di accellerazione angolare lungo gli assi X, Y...">accellero_t</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac59974e02cd3fc7c092fcdb38e4a1c29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmouse_h_i_d__t.html">mouseHID_t</a> mouseHID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Oggetto di tipo <a class="el" href="structmouse_h_i_d__t.html" title="Struttura che astrae il device Mouse. ">mouseHID_t</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga365f7d0a26864fe52550de2eb1d5c125"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t value_x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rappresenta lo spostamento lungo l'asse x del mouse. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga0309cefcf86c2c531a958a054242895a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t value_y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rappresenta lo spostamento lungo l'asse y del mouse. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generato da
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

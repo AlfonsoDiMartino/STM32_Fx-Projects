@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Bus Seriali:  File sorgente /mnt/hgfs/alfonsodimartino/Dropbox/Sistemi Embedded/Elaborati/04/Codice/I2C/I2C_MASTER_B_F4/src/config.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Bus Seriali
+   </div>
+   <div id="projectbrief">Progetti Bus Seriali : I2C, SPI, UART con toolchain STM32</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="modules.html"><span>Moduli</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;globali</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h_source.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">config.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * config.h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef CONFIG_H_</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define CONFIG_H_</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;stm32f4_discovery.h&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal_gpio.h&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal_i2c.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a01f0f8cf04d3aa99ef2addf546d6a869">   14</a></span>&#160;<span class="preprocessor">#define I2Cx                             I2C1</span></div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a7aef7519046ed7a9b7f167002804463d">   15</a></span>&#160;<span class="preprocessor">#define I2Cx_CLK_ENABLE()                __HAL_RCC_I2C1_CLK_ENABLE()</span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a91033bae83efaf72338333ed28476a21">   16</a></span>&#160;<span class="preprocessor">#define I2Cx_SDA_GPIO_CLK_ENABLE()       __HAL_RCC_GPIOB_CLK_ENABLE()</span></div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#ab8486a80ab56a03dfac399e3e6d4dba2">   17</a></span>&#160;<span class="preprocessor">#define I2Cx_SCL_GPIO_CLK_ENABLE()       __HAL_RCC_GPIOB_CLK_ENABLE()</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a5f88d5ce44f2db25e9e670d44637064b">   19</a></span>&#160;<span class="preprocessor">#define I2Cx_FORCE_RESET()               __HAL_RCC_I2C1_FORCE_RESET()</span></div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a12b00cb1505b0117e694e7412e004f12">   20</a></span>&#160;<span class="preprocessor">#define I2Cx_RELEASE_RESET()             __HAL_RCC_I2C1_RELEASE_RESET()</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/* Definition for I2Cx Pins */</span></div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a85a7350686d979a81d6a06836ac71505">   23</a></span>&#160;<span class="preprocessor">#define I2Cx_SCL_PIN                    GPIO_PIN_6</span></div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#af9b3f778e738463f656cdca5e5653f84">   24</a></span>&#160;<span class="preprocessor">#define I2Cx_SCL_GPIO_PORT              GPIOB</span></div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a483fa01fddafa6ec75616ca6c168f23b">   25</a></span>&#160;<span class="preprocessor">#define I2Cx_SCL_AF                     GPIO_AF4_I2C1</span></div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a7948abe69eb1335f74ef5c8a9c91154f">   26</a></span>&#160;<span class="preprocessor">#define I2Cx_SDA_PIN                    GPIO_PIN_9</span></div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a9c64aca9ffb944c695e9c13279b62fdc">   27</a></span>&#160;<span class="preprocessor">#define I2Cx_SDA_GPIO_PORT              GPIOB</span></div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a4cd28159c8df40e5688a2e3312ea34b4">   28</a></span>&#160;<span class="preprocessor">#define I2Cx_SDA_AF                     GPIO_AF4_I2C1</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/* Definition for I2Cx&#39;s NVIC */</span></div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#af6c85bb59da8e7a4e79cd0a0abf578ee">   31</a></span>&#160;<span class="preprocessor">#define I2Cx_EV_IRQn                    I2C1_EV_IRQn</span></div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#aadce15b0a87e7894ddb1129e9294fe88">   32</a></span>&#160;<span class="preprocessor">#define I2Cx_EV_IRQHandler              I2C1_EV_IRQHandler</span></div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a11dfedbf855547feba360ebc6bf2488a">   33</a></span>&#160;<span class="preprocessor">#define I2Cx_ER_IRQn                    I2C1_ER_IRQn</span></div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a69d2db6831eeb22a91d9b19749ded989">   34</a></span>&#160;<span class="preprocessor">#define I2Cx_ER_IRQHandler              I2C1_ER_IRQHandler</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a63968d2aea1f48a29e2ffa3a7b2f4bbc">   36</a></span>&#160;<span class="preprocessor">#define I2C_ADDRESS_A 0x0A&lt;&lt;1</span></div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#aab1c3a73c6b157a4d88e0630a8dd2bfe">   37</a></span>&#160;<span class="preprocessor">#define I2C_ADDRESS_B 0x0B&lt;&lt;1</span></div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a1434b4f003e5e655c3db167d71842a93">   38</a></span>&#160;<span class="preprocessor">#define I2C_ADDRESS_C 0x0C&lt;&lt;1</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html#a770f0c15acd838afca500d56b792c6b5">   40</a></span>&#160;<span class="preprocessor">#define I2C_ADDRESS I2C_ADDRESS_A</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_H_ */</span><span class="preprocessor"></span></div></div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f6af9f846402d6d9191a04286581bee4.html">Codice</a></li><li class="navelem"><a class="el" href="dir_619bb9251fe77e19bb1d6e2baa7faef9.html">I2C</a></li><li class="navelem"><a class="el" href="dir_bb44040df70c5694ed26b1d39ce03d67.html">I2C_MASTER_B_F4</a></li><li class="navelem"><a class="el" href="dir_2068627a16e54ef139eb5c12e5366730.html">src</a></li><li class="navelem"><a class="el" href="_i2_c___m_a_s_t_e_r___b___f4_2src_2config_8h.html">config.h</a></li>
+    <li class="footer">Generato da
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>
