@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>FreeRTOS: Riferimenti per il file FreeRTOS/src/main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">FreeRTOS
+   </div>
+   <div id="projectbrief">FreeRTOS su STM32F4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="modules.html"><span>Moduli</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;globali</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('main_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Strutture dati</a> &#124;
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#func-members">Funzioni</a> &#124;
+<a href="#var-members">Variabili</a>  </div>
+  <div class="headertitle">
+<div class="title">Riferimenti per il file main.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;stm32f4xx.h&quot;</code><br />
+<code>#include &quot;stm32f4_discovery.h&quot;</code><br />
+<code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
+<code>#include &quot;stm32f4xx_hal_gpio.h&quot;</code><br />
+<code>#include &quot;FreeRTOS.h&quot;</code><br />
+<code>#include &quot;task.h&quot;</code><br />
+<code>#include &quot;timers.h&quot;</code><br />
+<code>#include &quot;queue.h&quot;</code><br />
+<code>#include &quot;semphr.h&quot;</code><br />
+<code>#include &quot;hd44780.h&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Grafo delle dipendenze di inclusione per main.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c__incl.png" border="0" usemap="#_free_r_t_o_s_2src_2main_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Strutture dati</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcounter.html">counter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struttura del counter.  <a href="structcounter.html#details">Continua...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr class="memitem:ga93e5da6a23161097fe95c16929d625f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#ga93e5da6a23161097fe95c16929d625f7">N_TASK</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:ga93e5da6a23161097fe95c16929d625f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">numero di task  <a href="group___free_r_t_o_s.html#ga93e5da6a23161097fe95c16929d625f7">Continua...</a><br /></td></tr>
+<tr class="separator:ga93e5da6a23161097fe95c16929d625f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga953f378db69c5e61dc513d848e1e474e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#ga953f378db69c5e61dc513d848e1e474e">SERVER_PERIOD_MS</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:ga953f378db69c5e61dc513d848e1e474e"><td class="mdescLeft">&#160;</td><td class="mdescRight">periodo del server  <a href="group___free_r_t_o_s.html#ga953f378db69c5e61dc513d848e1e474e">Continua...</a><br /></td></tr>
+<tr class="separator:ga953f378db69c5e61dc513d848e1e474e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:ga7ce0a14b6e7779fbb2d9a05333792c41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#ga7ce0a14b6e7779fbb2d9a05333792c41">Init</a> (void)</td></tr>
+<tr class="memdesc:ga7ce0a14b6e7779fbb2d9a05333792c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione di inizializzazione.  <a href="group___free_r_t_o_s.html#ga7ce0a14b6e7779fbb2d9a05333792c41">Continua...</a><br /></td></tr>
+<tr class="separator:ga7ce0a14b6e7779fbb2d9a05333792c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c4077f6e38d3c221d7c08659926da10"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#ga6c4077f6e38d3c221d7c08659926da10">vPeriodTask</a> (void *parametri)</td></tr>
+<tr class="memdesc:ga6c4077f6e38d3c221d7c08659926da10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione che viene eseguita dai task creati.  <a href="group___free_r_t_o_s.html#ga6c4077f6e38d3c221d7c08659926da10">Continua...</a><br /></td></tr>
+<tr class="separator:ga6c4077f6e38d3c221d7c08659926da10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1d48cbbedfa353b1a782819bb7db06f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#gac1d48cbbedfa353b1a782819bb7db06f">vPollingServer</a> (void *parametri)</td></tr>
+<tr class="memdesc:gac1d48cbbedfa353b1a782819bb7db06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione che viene eseguita dal task server.  <a href="group___free_r_t_o_s.html#gac1d48cbbedfa353b1a782819bb7db06f">Continua...</a><br /></td></tr>
+<tr class="separator:gac1d48cbbedfa353b1a782819bb7db06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70af21c671abfcc773614a9a4f63d920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#ga70af21c671abfcc773614a9a4f63d920">SystemClock_Config</a> (void)</td></tr>
+<tr class="memdesc:ga70af21c671abfcc773614a9a4f63d920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione di configurazione del clock del sistema.  <a href="group___free_r_t_o_s.html#ga70af21c671abfcc773614a9a4f63d920">Continua...</a><br /></td></tr>
+<tr class="separator:ga70af21c671abfcc773614a9a4f63d920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#gae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:gae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7e5c95cf72a3f819bc4462a7fb62ca3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#gab7e5c95cf72a3f819bc4462a7fb62ca3">vApplicationMallocFailedHook</a> (void)</td></tr>
+<tr class="separator:gab7e5c95cf72a3f819bc4462a7fb62ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97fd430f36f8b065226e2bff9bad1de5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#ga97fd430f36f8b065226e2bff9bad1de5">vApplicationIdleHook</a> (void)</td></tr>
+<tr class="separator:ga97fd430f36f8b065226e2bff9bad1de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe7de696562c1b0a8f9d1005bccb276d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#gafe7de696562c1b0a8f9d1005bccb276d">vApplicationStackOverflowHook</a> (xTaskHandle pxTask, char *pcTaskName)</td></tr>
+<tr class="separator:gafe7de696562c1b0a8f9d1005bccb276d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variabili</h2></td></tr>
+<tr class="memitem:ga44028cd14d791231453fb24e24cab7c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#ga44028cd14d791231453fb24e24cab7c8">TASK_PERIOD_MS</a> [<a class="el" href="group___free_r_t_o_s.html#ga93e5da6a23161097fe95c16929d625f7">N_TASK</a>] ={100,1000,60000,3600000}</td></tr>
+<tr class="memdesc:ga44028cd14d791231453fb24e24cab7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">periodi assegnati ai task contatori  <a href="group___free_r_t_o_s.html#ga44028cd14d791231453fb24e24cab7c8">Continua...</a><br /></td></tr>
+<tr class="separator:ga44028cd14d791231453fb24e24cab7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66ec0ebd2ad198a0d51d390c55b52f15"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#ga66ec0ebd2ad198a0d51d390c55b52f15">task_name</a> [<a class="el" href="group___free_r_t_o_s.html#ga93e5da6a23161097fe95c16929d625f7">N_TASK</a>] = { &quot;Task0&quot;,&quot;Task1&quot;, &quot;Task2&quot;, &quot;Task3&quot; }</td></tr>
+<tr class="separator:ga66ec0ebd2ad198a0d51d390c55b52f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0639b448c4862618f597670523ef9975"><td class="memItemLeft" align="right" valign="top">SemaphoreHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#ga0639b448c4862618f597670523ef9975">xSemaphore</a></td></tr>
+<tr class="separator:ga0639b448c4862618f597670523ef9975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga473ac1c2f8875485b678a01d166058f4"><td class="memItemLeft" align="right" valign="top">HD44780_LCD_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#ga473ac1c2f8875485b678a01d166058f4">lcd</a></td></tr>
+<tr class="separator:ga473ac1c2f8875485b678a01d166058f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga584cdf7e15540c7205d7c4b1ed9f05cd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structcounter.html">counter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___free_r_t_o_s.html#ga584cdf7e15540c7205d7c4b1ed9f05cd">contatore</a> [<a class="el" href="group___free_r_t_o_s.html#ga93e5da6a23161097fe95c16929d625f7">N_TASK</a>]</td></tr>
+<tr class="separator:ga584cdf7e15540c7205d7c4b1ed9f05cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<div class="textblock"><dl class="section author"><dt>Autore</dt><dd>Salvatore Barone <a href="#" onclick="location.href='mai'+'lto:'+'sal'+'va'+'tor'+'.b'+'aro'+'ne'+'@gm'+'ai'+'l.c'+'om'; return false;">salva<span style="display: none;">.nosp@m.</span>tor.<span style="display: none;">.nosp@m.</span>baron<span style="display: none;">.nosp@m.</span>e@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a> , Alfonso Di Martino <a href="#" onclick="location.href='mai'+'lto:'+'alf'+'on'+'sod'+'im'+'art'+'in'+'o16'+'09'+'89@'+'gm'+'ail'+'.c'+'om'; return false;">alfon<span style="display: none;">.nosp@m.</span>sodi<span style="display: none;">.nosp@m.</span>marti<span style="display: none;">.nosp@m.</span>no16<span style="display: none;">.nosp@m.</span>0989@<span style="display: none;">.nosp@m.</span>gmai<span style="display: none;">.nosp@m.</span>l.com</a> , Sossio Fiorillo <a href="#" onclick="location.href='mai'+'lto:'+'fso'+'ss'+'io@'+'gm'+'ail'+'.c'+'om'; return false;">fsoss<span style="display: none;">.nosp@m.</span>io@g<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>com</a> , Pietro Liguori <a href="#" onclick="location.href='mai'+'lto:'+'pie'+'.l'+'igu'+'or'+'i@g'+'ma'+'il.'+'co'+'m'; return false;">pie.l<span style="display: none;">.nosp@m.</span>iguo<span style="display: none;">.nosp@m.</span>ri@gm<span style="display: none;">.nosp@m.</span>ail.<span style="display: none;">.nosp@m.</span>com</a> .</dd></dl>
+<dl class="section date"><dt>Data</dt><dd>08 07 2017</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA. </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d7118de178bfbe920ee67df3a72c5a10.html">FreeRTOS</a></li><li class="navelem"><a class="el" href="dir_daf006bf370631de7763a06831ce3019.html">src</a></li><li class="navelem"><a class="el" href="main_8c.html">main.c</a></li>
+    <li class="footer">Generato da
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>
