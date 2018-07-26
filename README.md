@@ -1,2 +1,5 @@
-# STM32_Fx_BSP
-HAL-based BSP for STM32 F3/F4
+# STM32Fx
+
+This repository i
+
+This repository is shared with my colleague and the original commits are available on his repository. Refer to it : https://github.com/piliguori/STM32Fx.
