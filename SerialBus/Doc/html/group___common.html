@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Bus Seriali: Common</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Bus Seriali
+   </div>
+   <div id="projectbrief">Progetti Bus Seriali : I2C, SPI, UART con toolchain STM32</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li class="current"><a href="modules.html"><span>Moduli</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li><a href="files.html"><span>File</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group___common.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Strutture dati</a> &#124;
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#func-members">Funzioni</a>  </div>
+  <div class="headertitle">
+<div class="title">Common</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Strutture dati</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_port_pin_pair__t.html">PortPinPair_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr class="memitem:gaf1028d18fd9c331264199b29e62aafdf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#gaf1028d18fd9c331264199b29e62aafdf">CLOCK_FREQUENCY_HZ</a>&#160;&#160;&#160;8000000</td></tr>
+<tr class="memdesc:gaf1028d18fd9c331264199b29e62aafdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frequenza del clock, in Hertz.  <a href="#gaf1028d18fd9c331264199b29e62aafdf">Continua...</a><br /></td></tr>
+<tr class="separator:gaf1028d18fd9c331264199b29e62aafdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f45c877d1e8266f8a2c1d0b87746950"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga5f45c877d1e8266f8a2c1d0b87746950">timer_wait_ms</a>(ms)&#160;&#160;&#160;HAL_Delay(ms)</td></tr>
+<tr class="memdesc:ga5f45c877d1e8266f8a2c1d0b87746950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consente di fermare l'esecuzione del programma per un certo periodo di tempo, in millisecondi.  <a href="#ga5f45c877d1e8266f8a2c1d0b87746950">Continua...</a><br /></td></tr>
+<tr class="separator:ga5f45c877d1e8266f8a2c1d0b87746950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f0a484de0de3ab1ddd77d5f716dea96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga9f0a484de0de3ab1ddd77d5f716dea96">timer_wait_us</a>(us)&#160;&#160;&#160;<a class="el" href="group___common.html#ga7503e7504587d44b866a24a088b678b6">DelayUS</a>(us)</td></tr>
+<tr class="memdesc:ga9f0a484de0de3ab1ddd77d5f716dea96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consente di fermare l'esecuzione del programma per un certo periodo di tempo, in nanosecondi.  <a href="#ga9f0a484de0de3ab1ddd77d5f716dea96">Continua...</a><br /></td></tr>
+<tr class="separator:ga9f0a484de0de3ab1ddd77d5f716dea96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae107f3d6f5123323077ce0a437181481"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#gae107f3d6f5123323077ce0a437181481">EXTI_LINE_9_5</a>&#160;&#160;&#160;EXTI9_5_IRQn</td></tr>
+<tr class="separator:gae107f3d6f5123323077ce0a437181481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ee41c367468eb8aafc82d0bb6b8ad0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga1ee41c367468eb8aafc82d0bb6b8ad0c">EXTI_LINE_15_10</a>&#160;&#160;&#160;EXTI15_10_IRQn</td></tr>
+<tr class="separator:ga1ee41c367468eb8aafc82d0bb6b8ad0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:ga7503e7504587d44b866a24a088b678b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___common.html#ga7503e7504587d44b866a24a088b678b6">DelayUS</a> (uint32_t us)</td></tr>
+<tr class="memdesc:ga7503e7504587d44b866a24a088b678b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consente di fermare l'esecuzione del programma per un certo periodo di tempo, in nanosecondi.  <a href="#ga7503e7504587d44b866a24a088b678b6">Continua...</a><br /></td></tr>
+<tr class="separator:ga7503e7504587d44b866a24a088b678b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<h2 class="groupheader">Documentazione delle definizioni</h2>
+<a class="anchor" id="gaf1028d18fd9c331264199b29e62aafdf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CLOCK_FREQUENCY_HZ&#160;&#160;&#160;8000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frequenza del clock, in Hertz. </p>
+<dl class="section warning"><dt>Avvertimento</dt><dd>deve essere aggiustata a seconda del clock con cui viene fatto funzionare il processore, altrimenti la funzione <a class="el" href="group___common.html#ga7503e7504587d44b866a24a088b678b6" title="Consente di fermare l&#39;esecuzione del programma per un certo periodo di tempo, in nanosecondi. ">DelayUS()</a> non funzionera' correttamente </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1ee41c367468eb8aafc82d0bb6b8ad0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXTI_LINE_15_10&#160;&#160;&#160;EXTI15_10_IRQn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>External Line[15:10] Interrupts per STM32F303VCT6 </p>
+
+</div>
+</div>
+<a class="anchor" id="gae107f3d6f5123323077ce0a437181481"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXTI_LINE_9_5&#160;&#160;&#160;EXTI9_5_IRQn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Le seguenti due macro vanno modificate con il valore del tipo enumerativo IRQn_Type specifico per il particolare processore. Il tipo enumerativo IRQn_Type e' definito nel file specifico per uno specifico processore all'interno del percorso Driver/CMSIS/ST/STM32Fxxx/Include/stm32fxxxxxxx.h Ad esempio, quello per il processore STM32F303VCT6 usato per il testing e' il file Driver/CMSIS/ST/STM32F3xx/Include/stm32f3030xc.hExternal Line[9:5] Interrupts per STM32F303VCT6 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga5f45c877d1e8266f8a2c1d0b87746950"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define timer_wait_ms</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ms</td><td>)</td>
+          <td>&#160;&#160;&#160;HAL_Delay(ms)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Consente di fermare l'esecuzione del programma per un certo periodo di tempo, in millisecondi. </p>
+<dl class="section warning"><dt>Avvertimento</dt><dd>La macro va modificata solo se strettamente necessario</dd></dl>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ms</td><td>millisecondi per cui fermare l'esecuzione del programma </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9f0a484de0de3ab1ddd77d5f716dea96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define timer_wait_us</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">us</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group___common.html#ga7503e7504587d44b866a24a088b678b6">DelayUS</a>(us)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Consente di fermare l'esecuzione del programma per un certo periodo di tempo, in nanosecondi. </p>
+<dl class="section warning"><dt>Avvertimento</dt><dd>La macro va modificata solo se strettamente necessario</dd></dl>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">us</td><td>nanosecondi per cui fermare l'esecuzione del programma </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle funzioni</h2>
+<a class="anchor" id="ga7503e7504587d44b866a24a088b678b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DelayUS </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>us</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Consente di fermare l'esecuzione del programma per un certo periodo di tempo, in nanosecondi. </p>
+<dl class="section warning"><dt>Avvertimento</dt><dd>La macro va modificata solo se strettamente necessario</dd></dl>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">us</td><td>nanosecondi per cui fermare l'esecuzione del programma </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generato da
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

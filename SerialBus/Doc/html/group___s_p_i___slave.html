@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Bus Seriali: SPI_Slave</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Bus Seriali
+   </div>
+   <div id="projectbrief">Progetti Bus Seriali : I2C, SPI, UART con toolchain STM32</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li class="current"><a href="modules.html"><span>Moduli</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li><a href="files.html"><span>File</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group___s_p_i___slave.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#func-members">Funzioni</a> &#124;
+<a href="#var-members">Variabili</a>  </div>
+  <div class="headertitle">
+<div class="title">SPI_Slave<div class="ingroups"><a class="el" href="group__bus_seriali.html">BusSeriali</a> &raquo; <a class="el" href="group___s_p_i.html">SPI</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementazione del dispositivo Slave che effettua la misura di temperatura con un sensore di temperatura esterno. <br />
+  
+<a href="#details">Continua...</a></p>
+<div class="dynheader">
+Diagramma di collaborazione per SPI_Slave:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group___s_p_i___slave.png" border="0" alt="" usemap="#group______s__p__i______slave"/>
+<map name="group______s__p__i______slave" id="group______s__p__i______slave">
+<area shape="rect" id="node1" href="group___s_p_i.html" title="SPI" alt="" coords="5,5,49,32"/>
+</map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr class="memitem:ga5593abbf196bdbd410b0939ef878b9d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___slave.html#ga5593abbf196bdbd410b0939ef878b9d1">Error_Handler</a>()&#160;&#160;&#160;<a class="el" href="group___u_a_r_t___f3.html#ga829116a51f1db1a72ebd1120f60719d5">_Error_Handler</a>(__FILE__, __LINE__)</td></tr>
+<tr class="separator:ga5593abbf196bdbd410b0939ef878b9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:ga829116a51f1db1a72ebd1120f60719d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___slave.html#ga829116a51f1db1a72ebd1120f60719d5">_Error_Handler</a> (char *file, int line)</td></tr>
+<tr class="memdesc:ga829116a51f1db1a72ebd1120f60719d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is executed in case of error occurrence.  <a href="#ga829116a51f1db1a72ebd1120f60719d5">Continua...</a><br /></td></tr>
+<tr class="separator:ga829116a51f1db1a72ebd1120f60719d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70af21c671abfcc773614a9a4f63d920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___slave.html#ga70af21c671abfcc773614a9a4f63d920">SystemClock_Config</a> (void)</td></tr>
+<tr class="memdesc:ga70af21c671abfcc773614a9a4f63d920"><td class="mdescLeft">&#160;</td><td class="mdescRight">System Clock Configuration.  <a href="#ga70af21c671abfcc773614a9a4f63d920">Continua...</a><br /></td></tr>
+<tr class="separator:ga70af21c671abfcc773614a9a4f63d920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf20a88180db1113be1e89266917d148b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___slave.html#gaf20a88180db1113be1e89266917d148b">HAL_ADC_ConvCpltCallback</a> (ADC_HandleTypeDef *hadc)</td></tr>
+<tr class="memdesc:gaf20a88180db1113be1e89266917d148b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular conversion complete callback in non blocking mode.  <a href="#gaf20a88180db1113be1e89266917d148b">Continua...</a><br /></td></tr>
+<tr class="separator:gaf20a88180db1113be1e89266917d148b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7dfd9b79bc5a37d7df40207afbc5431f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___slave.html#ga7dfd9b79bc5a37d7df40207afbc5431f">setup</a> (void)</td></tr>
+<tr class="memdesc:ga7dfd9b79bc5a37d7df40207afbc5431f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione di inizializzazione.  <a href="#ga7dfd9b79bc5a37d7df40207afbc5431f">Continua...</a><br /></td></tr>
+<tr class="separator:ga7dfd9b79bc5a37d7df40207afbc5431f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b33edabd7f1c4e4a0bf32c67269be2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___slave.html#ga0b33edabd7f1c4e4a0bf32c67269be2f">loop</a> (void)</td></tr>
+<tr class="memdesc:ga0b33edabd7f1c4e4a0bf32c67269be2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione che implementa la logica del programma.  <a href="#ga0b33edabd7f1c4e4a0bf32c67269be2f">Continua...</a><br /></td></tr>
+<tr class="separator:ga0b33edabd7f1c4e4a0bf32c67269be2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___slave.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="separator:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variabili</h2></td></tr>
+<tr class="memitem:ga22b804736f5648d52f639b2647d4ed13"><td class="memItemLeft" align="right" valign="top">ADC_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___slave.html#ga22b804736f5648d52f639b2647d4ed13">hadc1</a></td></tr>
+<tr class="memdesc:ga22b804736f5648d52f639b2647d4ed13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle della struttura ADC che sara' inizializzata.  <a href="#ga22b804736f5648d52f639b2647d4ed13">Continua...</a><br /></td></tr>
+<tr class="separator:ga22b804736f5648d52f639b2647d4ed13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c6222bae4d0328dd843ae099623b40b"><td class="memItemLeft" align="right" valign="top">SPI_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___slave.html#ga9c6222bae4d0328dd843ae099623b40b">hspi1</a></td></tr>
+<tr class="memdesc:ga9c6222bae4d0328dd843ae099623b40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle della struttura SPI che sara' inizializzata.  <a href="#ga9c6222bae4d0328dd843ae099623b40b">Continua...</a><br /></td></tr>
+<tr class="separator:ga9c6222bae4d0328dd843ae099623b40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad030296321539c4503bcdca8e34b608d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___slave.html#gad030296321539c4503bcdca8e34b608d">txBuffer</a></td></tr>
+<tr class="memdesc:gad030296321539c4503bcdca8e34b608d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer di trasmissione utilizzato per la comunicazione SPI.  <a href="#gad030296321539c4503bcdca8e34b608d">Continua...</a><br /></td></tr>
+<tr class="separator:gad030296321539c4503bcdca8e34b608d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7394d71a5b03e693a17bc6ea557b4d9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i___slave.html#gad7394d71a5b03e693a17bc6ea557b4d9">rxBuffer</a></td></tr>
+<tr class="memdesc:gad7394d71a5b03e693a17bc6ea557b4d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer di ricezione utilizzato per la comunicazione SPI.  <a href="#gad7394d71a5b03e693a17bc6ea557b4d9">Continua...</a><br /></td></tr>
+<tr class="separator:gad7394d71a5b03e693a17bc6ea557b4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<p>Implementazione del dispositivo Slave che effettua la misura di temperatura con un sensore di temperatura esterno. <br />
+ </p>
+<p>Il dispositivo utilizza un sensore esterno per la misurazione, in particolare il sensore LM35 - Precision Centigrade Temperature Sensors, che invia il valore di tensione corrispondente alla misura effettuata al Pin0 di ingresso dell' ADC1 presente a bordo della board. Terminata la conversione analogico-digitale, il valore di temperatura, espresso in °C e rappresentato su 8 bit, viene trasferito alla board Master tramite comunicazione realizzata su bus seriale SPI. </p>
+<h2 class="groupheader">Documentazione delle definizioni</h2>
+<a class="anchor" id="ga5593abbf196bdbd410b0939ef878b9d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Error_Handler</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">void</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group___u_a_r_t___f3.html#ga829116a51f1db1a72ebd1120f60719d5">_Error_Handler</a>(__FILE__, __LINE__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle funzioni</h2>
+<a class="anchor" id="ga829116a51f1db1a72ebd1120f60719d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Error_Handler </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function is executed in case of error occurrence. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valori di ritorno</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf20a88180db1113be1e89266917d148b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_ADC_ConvCpltCallback </td>
+          <td>(</td>
+          <td class="paramtype">ADC_HandleTypeDef *&#160;</td>
+          <td class="paramname"><em>hadc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Regular conversion complete callback in non blocking mode. </p>
+<p>Terminata la conversione, prelevo il valore dal DR della struttura hadc. Il risultato generato dall'ADC indica uno dei 4096 possibili livelli (dato che la risoluzione è di 12 bit =&gt; 4096 livelli) su cui è discretizzato un range di tensioni da 0 a 3V. Per associare al livello il corrispondente valore di tensione, moltiplico per 3000 (portando il risultato in mV) e divido per (2^Risoluzione)-1. Dato che il sensore genera una tensione che cresce linearmente con la temperatura, con una relazione 10mV = 1 °C, per esprimere il risultato in °C divido tutto per 10.</p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hadc</td><td>: puntatore alla struttura ADC_HandleTypeDef. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">txBuffer</td><td>: buffer di trasmissione usato per la comunicazione SPI. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0b33edabd7f1c4e4a0bf32c67269be2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funzione che implementa la logica del programma. </p>
+<p>Il dispositivo si mette in attesa di ricevere il codice di richiesta misurazione temperatura (0xFF) dal Master e una volta ricevuto attiva l'ADC a bordo per una conversione in modalità non bloccante. Terminata la conversione, il valore di temperatura misurato viene salvato nel buffer di trasmissione, che viene inviato al Master durante la seconda comunicazione. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga840291bc02cba5474a4cb46a9b9566fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga7dfd9b79bc5a37d7df40207afbc5431f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funzione di inizializzazione. </p>
+<p>E' la prima funzione ad essere eseguita nel main program. Si occupa di:</p><ul>
+<li>Inizializzare la libreria HAL;</li>
+<li>Configurare il system clock;</li>
+<li>Inizializzare e configurare tutte le periferiche utilizzate; <br />
+</li>
+<li>Inizializzare le variabili ed eseguire le funzioni richieste al reset del sistema. <br />
+ </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="ga70af21c671abfcc773614a9a4f63d920"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SystemClock_Config </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>System Clock Configuration. </p>
+<p>Configure the main internal regulator output voltage</p>
+<p>Initializes the CPU, AHB and APB busses clocks</p>
+<p>Initializes the CPU, AHB and APB busses clocks</p>
+<p>Configure the Systick interrupt time</p>
+<p>Configure the Systick</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle variabili</h2>
+<a class="anchor" id="ga22b804736f5648d52f639b2647d4ed13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADC_HandleTypeDef hadc1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle della struttura ADC che sara' inizializzata. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga9c6222bae4d0328dd843ae099623b40b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SPI_HandleTypeDef hspi1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle della struttura SPI che sara' inizializzata. </p>
+
+</div>
+</div>
+<a class="anchor" id="gad7394d71a5b03e693a17bc6ea557b4d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t rxBuffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer di ricezione utilizzato per la comunicazione SPI. </p>
+
+</div>
+</div>
+<a class="anchor" id="gad030296321539c4503bcdca8e34b608d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t txBuffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Buffer di trasmissione utilizzato per la comunicazione SPI. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generato da
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

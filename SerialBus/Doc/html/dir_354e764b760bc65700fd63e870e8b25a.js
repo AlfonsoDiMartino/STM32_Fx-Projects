@@ -1,0 +1,5 @@
+var dir_354e764b760bc65700fd63e870e8b25a =
+[
+    [ "I2C", "dir_374f00c6c374f5191711d66ec2930b28.html", "dir_374f00c6c374f5191711d66ec2930b28" ],
+    [ "SPI", "dir_0dd200bc6878b2843a258b8a09091c31.html", "dir_0dd200bc6878b2843a258b8a09091c31" ]
+];
